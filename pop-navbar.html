@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-nav Documentation</title>
+    <link rel="stylesheet" href="node_modules/@manikandan_srinivasalu/usecss/main.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+          width: 5px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px grey; 
+          border-radius: 5px;
+        }
+         
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: rgb(57, 57, 57); 
+          border-radius: 5px;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #000000; 
+        }
+    </style>
+</head>
+<body class="ocean">
+    <h2 class="doc-title">Pop-nav</h2>
+    <a href="demo6.html"  target="_blank"><input type="button" value="Demo" class="ocean-deepsea"></a>
+    <h3 class="doc-subtitle">CDN link</h3>
+    <p class="doc-content">To use the pop-nav component, include the following CSS and JavaScript files in your HTML:</p>
+    <div class="code-container">
+        <input type="button" value="Copy" class="ocean-shell-btn" onclick="copyCode()">
+        <code id="code-block">
+            &lt;link 
+            rel="stylesheet" 
+            href="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/popnav/popnav.css"&gt;
+            &lt;script src="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/popnav/popnav.js" 
+            defer&gt;
+            &lt;/script&gt;
+        </code>
+    </div>
+
+    <p class="doc-content">Pop nav provides a navigation bar with a popping effect.</p>
+
+    <h3 class="doc-subtitle">Attributes</h3>
+    <table>
+        <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>openicon</td>
+            <td>Image that opens menu (e.g., hamburgericon)</td>
+        </tr>
+        <tr>
+            <td>closeicon</td>
+            <td>Image that closes menu (e.g., closeicon)</td>
+        </tr>
+        <tr>
+            <td>btncolor</td>
+            <td>Color of the navbar button</td>
+        </tr>
+        <tr>
+            <td>btnborder</td>
+            <td>CSS border property for the button</td>
+        </tr>
+        <tr>
+            <td>menustyle</td>
+            <td>Bar background color, menu color, hover color, active color</td>
+        </tr>
+        <tr>
+            <td>fontstyle</td>
+            <td>Font color, hover color</td>
+        </tr>
+        <tr>
+            <td>pages</td>
+            <td>Names of the pages (separate with commas)</td>
+        </tr>
+        <tr>
+            <td>links</td>
+            <td>Links for the pages (URL or .html file)</td>
+        </tr>
+
+    </table>
+    
+
+    <p class="doc-content">Customize the pop-nav's appearance and behavior using these attributes.</p>
+
+    <div class="code-container">
+        <input type="button" value="Copy" class="ocean-shell-code-btn" onclick="copytagCode()">
+        <code id="code-tag-block">
+            &lt;pop-nav
+                openicon="images/hamburger.png" 
+                closeicon = "images/exit.png"
+                btncolor="wheat" 
+                btnborder = "5px solid lightgrey"
+                menustyle = "wheat,black,white,"
+                fontstyle="white,black"
+                pages="home,about,contact,new product" 
+                links="link1.html,link2.html,link3.html"&gt;
+            &lt;/pop-nav&gt;
+        </code>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

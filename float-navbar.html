@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float-nav</title>
+    <link rel="stylesheet" href="node_modules/@manikandan_srinivasalu/usecss/main.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+          width: 5px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px grey; 
+          border-radius: 5px;
+        }
+         
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: rgb(57, 57, 57); 
+          border-radius: 5px;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #000000; 
+        }
+    </style>
+  
+</head>
+<body class="ocean">
+    <h2 class="doc-title">Float-nav</h2>
+    <a href="demo3.html"  target="_blank"><input type="button" value="Demo" class="ocean-deepsea"></a>
+    <h3 class="doc-subtitle">CDN link</h3>
+
+    <p class="doc-content">To use the float-nav component, include the following CSS and JavaScript files in your HTML:</p>
+
+    <div class="code-container">
+        <input type="button" value="Copy" class="ocean-shell-btn" onclick="copyCode()">
+        
+        <code id="code-block">
+            &lt;link
+             rel="stylesheet" 
+             href="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/floatnav/floatnav.css"&gt;
+            &lt;script 
+            src="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/floatnav/floatnav.js" defer&gt;
+            &lt;/script&gt;
+        </code>
+    </div>
+
+    <p class="doc-content">Float nav is like a floating icon button that can hold up to 6 menus. The side of the icon and position can also be changed, but not the menus.</p>
+
+    <h3 class="doc-subtitle">Attributes</h3>
+    <table>
+        <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>openicon</td>
+            <td>Image (e.g., hamburgericon)</td>
+        </tr>
+        <tr>
+            <td>closeicon</td>
+            <td>Image (e.g., closeicon)</td>
+        </tr>
+        <tr>
+            <td>fontstyle</td>
+            <td>fontcolor, hovercolor</td>
+        </tr>
+        <tr>
+            <td>posx, posy</td>
+            <td>Icon position x, y for mobile view</td>
+        </tr>
+        <tr>
+            <td>posxpc, posypc</td>
+            <td>Icon position x, y for PC view</td>
+        </tr>
+        <tr>
+            <td>menubtnstyle</td>
+            <td>Color, CSS border property, roundness in (%)</td>
+        </tr>
+        <tr>
+            <td>menustyle</td>
+            <td>Color, hovercolor, clickcolor, roundness in (px)</td>
+        </tr>
+        <tr>
+            <td>pages</td>
+            <td>Names of the pages (separate with commas)</td>
+        </tr>
+        <tr>
+            <td>links</td>
+            <td>Links for the pages (URL or .html file)</td>
+        </tr>
+        <tr>
+            <td>right</td>
+            <td>Sticks to the right side if right="true"</td>
+        </tr>
+    </table>
+
+    <p class="doc-content">Use these attributes to customize the float nav's appearance and behavior.</p>
+    
+    <div class="code-container">
+        <input type="button" value="Copy" class="ocean-shell-code-btn" onclick="copytagCode()">
+        
+        <code id="code-tag-block">
+            &lt;float-nav
+                openicon="images/hamburger.png"
+                closeicon="images/exit.png"
+                fontstyle="white,black"
+                posx="-5px" posy="1px"
+                posxpc="-4px" posypc="0px"
+                menubtnstyle="lightblue,10px double navy,46%"
+                menustyle="navy,powderblue,red,3px"
+                pages="Home,About,Contact,Services,Product"
+                links="link1.html,link2.html,link3.html,link4.html,link5.html"&gt;
+            &lt;/float-nav&gt;
+        </code>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

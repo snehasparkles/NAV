@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <link rel="stylesheet" href="node_modules/@manikandan_srinivasalu/usecss/main.css">
+
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="nav-img">
+<img   src="images/logo.jpeg" width="150px" height="100px"/>
+</div>
+<div class="nav-list">
+    <a href="intro.html" id="link-intro">Introduction</a><br/>
+    <a href="getting-started.html" id="link-getting-started">Getting Started</a><br/>
+    <a href="basic-navbar.html" id="link-basic-navbar">Basic Navbar</a><br/>
+    <a href="bubble-navbar.html" id="link-bubble-navbar">Bubble Navbar</a><br/>
+    <a href="float-navbar.html" id="link-float-navbar">Float Navbar</a><br/>
+    <a href="half-slide-navbar.html" id="link-half-slide-navbar">Half-Slide Navbar</a><br/>
+    <a href="hover-navbar.html" id="link-hover-navbar">Hover Navbar</a><br/>
+    <a href="pop-navbar.html" id="link-pop-navbar">Pop Navbar</a><br/>
+    <a href="simple-navbar.html" id="link-simple-navbar">Simple Navbar</a><br/>
+    <a href="slide-navbar.html" id="link-slide-navbar">Slide Navbar</a><br/>
+</div>
+
+<script>
+  // Wait until the DOM is fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get all the anchor tags inside the nav list
+    const navLinks = document.querySelectorAll(".nav-list a");
+    
+    // Loop through each link and add a click event listener
+    navLinks.forEach(function(link) {
+      link.addEventListener("click", function(event) {
+        event.preventDefault();  // Prevent the default anchor behavior
+        
+        // Get the target href of the clicked link
+        const targetPage = link.getAttribute("href");
+        
+        // Access the parent document's iframe
+        const contentFrame = parent.document.getElementById("content-frame");
+        
+        // Change the src of the iframe to the target page
+        if (contentFrame) {
+          contentFrame.setAttribute("src", targetPage);
+        }
+      });
+    });
+  });
+</script>
+
+
+</body>
+</html>

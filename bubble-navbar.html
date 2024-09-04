@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Navbar - Getting Started</title>
+    <link rel="stylesheet" href="node_modules/@manikandan_srinivasalu/usecss/main.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 5px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(57, 57, 57);
+            border-radius: 5px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #000000;
+        }
+    </style>
+
+</head>
+<body class="ocean">
+    <h2 class="doc-title">Bubble-nav</h2>
+    <a href="demo2.html"  target="_blank"><input type="button" value="Demo" class="ocean-deepsea"></a>
+    <h3 class="doc-subtitle">CDN link</h3>
+
+    <p class="doc-content">To use the bubble-nav component, include the following CSS and JavaScript files in your HTML:</p>
+
+    <div class="code-container">
+        <input type="button" value="Copy" class="ocean-shell-btn" onclick="copyCode()">
+        <code id="code-block">
+            &lt;link 
+            rel="stylesheet" 
+            href="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/bubblenav/bubblenav.css"&gt;
+            &lt;script 
+            src="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/bubblenav/bubblenav.js" defer&gt;
+            &lt;/script&gt;
+        </code>
+    </div>
+
+    <p class="doc-content">A circular menu that pops up from the corner, allowing you to create interactive and visually appealing navigation.</p>
+    <p class="doc-content"><strong>Note:</strong> bubble-nav can handle only up to 4 menu items.</p>
+
+    <h3 class="doc-subtitle">Attributes</h3>
+    <table>
+        <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>color</td>
+            <td>Color of the bubbles</td>
+        </tr>
+        <tr>
+            <td>hovercolor</td>
+            <td>Color on hover</td>
+        </tr>
+        <tr>
+            <td>bubbletext-color</td>
+            <td>Font color</td>
+        </tr>
+        <tr>
+            <td>bubbleborder</td>
+            <td>Changes the border color of the bubble</td>
+        </tr>
+        <tr>
+            <td>font</td>
+            <td>Font family of your choice</td>
+        </tr>
+        <tr>
+            <td>pages</td>
+            <td>Names of the pages (separate with commas)</td>
+        </tr>
+        <tr>
+            <td>links</td>
+            <td>Links for the pages (URL or .html file)</td>
+        </tr>
+        <tr>
+            <td>bubble1-x</td>
+            <td>The X position of bubble 1 in px</td>
+        </tr>
+        <tr>
+            <td>bubble1-y</td>
+            <td>The Y position of bubble 1 in px</td>
+        </tr>
+        <tr>
+            <td>bubble2-x</td>
+            <td>The X position of bubble 2 in px</td>
+        </tr>
+        <tr>
+            <td>bubble2-y</td>
+            <td>The Y position of bubble 2 in px</td>
+        </tr>
+        <tr>
+            <td>bubble3-x</td>
+            <td>The X position of bubble 3 in px</td>
+        </tr>
+        <tr>
+            <td>bubble3-y</td>
+            <td>The Y position of bubble 3 in px</td>
+        </tr>
+        <tr>
+            <td>bubble4-x</td>
+            <td>The X position of bubble 4 in px</td>
+        </tr>
+        <tr>
+            <td>bubble4-y</td>
+            <td>The Y position of bubble 4 in px</td>
+        </tr>
+        <tr>
+            <td>menucolor</td>
+            <td>Color of the menu button in the corner</td>
+        </tr>
+        <tr>
+            <td>menutext-color</td>
+            <td>Font color of the menu button</td>
+        </tr>
+        <tr>
+            <td>menuborder</td>
+            <td>Use CSS border (e.g., 2px solid red)</td>
+        </tr>
+    </table>
+
+    <p class="doc-content">By using these attributes, you can customize the bubble menu's appearance and functionality to suit your website's needs.</p>
+    
+    <div class="code-container">
+        <input type="button" value="Copy" class="ocean-shell-code-btn" onclick="copytagCode()">
+        <code id="code-tag-block">
+            &lt;bubble-nav 
+                pages="contact,about,product,new" 
+                links="contact.html,about.html" 
+                color="orange" 
+                hovercolor="grey" 
+                bubbletext-color="black" 
+                bubbleborder="red" 
+                font="arial"&gt;
+            &lt;/bubble-nav&gt;
+        </code>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

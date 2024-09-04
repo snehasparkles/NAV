@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple-nav Documentation</title>
+    <link rel="stylesheet" href="node_modules/@manikandan_srinivasalu/usecss/main.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+          width: 5px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px grey; 
+          border-radius: 5px;
+        }
+         
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: rgb(57, 57, 57); 
+          border-radius: 5px;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #000000; 
+        }
+    </style>
+</head>
+<body class="ocean">
+    <h2 class="doc-title">Simple-nav</h2>
+    <a href="demo7.html"  target="_blank"><input type="button" value="Demo" class="ocean-deepsea"></a>
+    <h3 class="doc-subtitle">CDN link</h3>
+    <p class="doc-content">To use the simple-nav component, include the following CSS and JavaScript files in your HTML:</p>
+    <div class="code-container">
+        <input type="button" value="Copy" class="ocean-shell-btn" onclick="copyCode()">
+        <code id="code-block">
+            &lt;link 
+            rel="stylesheet" 
+            href="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/simplenav/simplenav.css"&gt;
+            &lt;script src="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/simplenav/simplenav.js" 
+            defer&gt;
+            &lt;/script&gt;
+        </code>
+    </div>
+
+    <p class="doc-content">Simple nav provides a minimalistic navigation bar without any advanced effects.</p>
+
+    <h3 class="doc-subtitle">Attributes</h3>
+    <table>
+        <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>msg</td>
+            <td>Message to be displayed on top of the navbar</td>
+        </tr>
+        <tr>
+            <td>msgcolor</td>
+            <td>Background color, font color for the message</td>
+        </tr>
+        <tr>
+            <td>navbarcolor</td>
+            <td>Bar background color, font color, menu hover color, font hover color</td>
+        </tr>
+        <tr>
+            <td>pages</td>
+            <td>Names of the pages (separate with commas)</td>
+        </tr>
+        <tr>
+            <td>links</td>
+            <td>Links for the pages (URL or .html file)</td>
+        </tr>
+        <tr>
+            <td>logo</td>
+            <td>Add your brand image</td>
+        </tr>
+        <tr>
+            <td>logodim</td>
+            <td>Dimensions: Height and Width in pixels (px)</td>
+        </tr>
+        <tr>
+            <td>icons</td>
+            <td>Icons for your social media (separate with commas)</td>
+        </tr>
+        <tr>
+            <td>iconlinks</td>
+            <td>Links for the icons (URL)</td>
+        </tr>
+        <tr>
+            <td>iconhovercolor</td>
+            <td>Hover color on the icons</td>
+        </tr>
+    </table>
+    
+
+    <p class="doc-content">Customize the simple-nav's appearance and behavior using these attributes.</p>
+
+    <div class="code-container">
+        <input type="button" value="Copy" class="ocean-shell-code-btn" onclick="copytagCode()">
+        <code id="code-tag-block">
+            &lt;simple-nav
+                msg="Hello World!"
+                msgcolor=",white"
+                navbarcolor="green,white,lightgreen,black"
+                pages = "Home,Blog,Service,Contact,new,works"
+                links ="../index.html,../about.html,link3.html,link4.html"
+                logo = "images/logo.jpeg"
+                logodim="30px,40px"
+                icons="images/gg.png,images/fb.png,images/ig.png,images/yt.png,images/wt.png"
+                iconlinks="https://www.google.com,,link3.html,https://www.youtube.com,link4.html"
+                iconhovercolor="lightgreen"&gt;
+            &lt;/simple-nav&gt;
+        </code>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

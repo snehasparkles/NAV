@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide-nav Documentation</title>
+    <link rel="stylesheet" href="node_modules/@manikandan_srinivasalu/usecss/main.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+          width: 5px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px grey; 
+          border-radius: 5px;
+        }
+         
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: rgb(57, 57, 57); 
+          border-radius: 5px;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #000000; 
+        }
+    </style>
+</head>
+<body class="ocean">
+    <h2 class="doc-title">Slide-nav</h2>
+    <a href="demo8.html"  target="_blank"><input type="button" value="Demo" class="ocean-deepsea"></a>
+    <h3 class="doc-subtitle">CDN link</h3>
+    <p class="doc-content">To use the slide-nav component, include the following CSS and JavaScript files in your HTML:</p>
+    <div class="code-container">
+        <input type="button" value="Copy" class="ocean-shell-btn" onclick="copyCode()">
+        <code id="code-block">
+            &lt;link 
+            rel="stylesheet" 
+            href="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/slidenav/slidenav.css"&gt;
+            &lt;script src="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/slidenav/slidenav.js" 
+            defer&gt;
+            &lt;/script&gt;
+        </code>
+    </div>
+
+    <p class="doc-content">Slide nav provides a classic sliding effect for navigation.</p>
+
+    <h3 class="doc-subtitle">Attributes</h3>
+    <table>
+        <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>logo</td>
+            <td>Add your brand image</td>
+        </tr>
+        <tr>
+            <td>logodim</td>
+            <td>Dimensions: Height and Width in pixels (px)</td>
+        </tr>
+        <tr>
+            <td>barcolor</td>
+            <td>Color of the navbar</td>
+        </tr>
+        <tr>
+            <td>fontstyle</td>
+            <td>Font color, hover color</td>
+        </tr>
+        <tr>
+            <td>slidecolor</td>
+            <td>Color of the slide</td>
+        </tr>
+        <tr>
+            <td>slideicon</td>
+            <td>Image that opens the menu (e.g., hamburgericon)</td>
+        </tr>
+        <tr>
+            <td>pages</td>
+            <td>Names of the pages (separate with commas)</td>
+        </tr>
+        <tr>
+            <td>links</td>
+            <td>Links for the pages (URL or .html file)</td>
+        </tr>
+        <tr>
+            <td>direction</td>
+            <td>Slide direction (top, bottom, left, right)</td>
+        </tr>
+    </table>
+    
+
+    <p class="doc-content">Customize the slide-nav's appearance and behavior using these attributes.</p>
+
+    <div class="code-container">
+        <input type="button" value="Copy" class="ocean-shell-code-btn" onclick="copytagCode()">
+        <code id="code-tag-block">
+            &lt;slide-nav
+            logo="../nav.jfif"
+            logodim="40px,60px"
+            barcolor="purple"
+            fontstyle="purple,white"
+            slidecolor="violet"
+            slideicon="images/hamburger.png"
+            page="home,contact,services,blog,new,link,added"
+            links="link1.html,link2.html,link3.html,link4.html,link5.html"
+            direction="left"&gt;
+            &lt;/slide-nav&gt;
+        </code>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

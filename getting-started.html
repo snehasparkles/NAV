@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getting-started</title>
+    <link rel="stylesheet" href="node_modules/@manikandan_srinivasalu/usecss/main.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+          width: 5px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px grey; 
+          border-radius: 5px;
+        }
+         
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: rgb(57, 57, 57); 
+          border-radius: 5px;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #000000; 
+        }
+        </style>
+  
+</head>
+<body class="ocean">
+    <h2 class="doc-title">Getting Started</h2>
+
+    <h3 class="doc-subtitle">How to Use NAV ?</h3>
+    <p class="doc-content">
+        Include the CDN Links: Start by including the respective CSS and JavaScript CDN links in the <head> section of your HTML document.
+    </p>
+    <p class="doc-content">
+        Add NAV Tags: Use the NAV tags in your HTML to define the structure and style of your navbar.
+    </p>
+    <p class="doc-content">
+        Customize with Attributes: Each NAV tag comes with a set of attributes that allow you to customize the navbar's appearance and behavior.
+    </p>
+
+    <h3 class="doc-subtitle">Example:</h3>
+
+    <div class="code-container" >
+        <input type="button" value="Copy" class="ocean-shell-btn" onclick="copyCode()">
+        
+            <code id="code-block" >
+            &lt;link 
+            rel="stylesheet" 
+            href="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/basic-nav/style.css"&gt;
+            &lt;script src="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/basic-nav/script.js" 
+            defer&gt;
+            &lt;/script&gt;
+
+            &lt;basic-nav
+            logo="path/to/logo.png"
+            brand="My Brand"
+            pages="Home,About,Contact"
+            links="home.html,about.html,contact.html"&gt;
+            &lt;/basic-nav&gt;
+            </code>
+       
+    </div>
+    <p class="doc-content">Each navigation tag within the framework comes with its own unique CDN link and specific attributes tailored to the type of navigation bar you wish to create.</p>
+        <p class="doc-content">    For example, the &lt;basic-nav&gt; tag uses a distinct CDN link that loads the necessary CSS and JavaScript files to render a basic navigation bar. This tag allows you to customize the logo, brand name, and links through its attributes. Similarly, other tags like &lt;hover-nav&gt;, &lt;slide-nav&gt;, and  &lt;float-nav&gt; have their own CDN links and attribute sets, enabling developers to easily implement different navigation styles with minimal effort. </p>
+            <p class="doc-content">   By including the appropriate CDN links and using the correct attributes, you can quickly build a variety of navigation bars that enhance the user experience on your website or web application.</p>
+   
+
+
+    <script src="script.js" ></script>
+</body>
+</html>    
+
+
